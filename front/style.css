@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: lighter; */
+    box-sizing: border-box;
+}
+
+:root{
+    --colorBase: #5e877b;
+}
+
+body{
+    background: var(--colorBase);
+}
+
+.neum{
+    width: 90%;
+    max-width: 900px;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+    border-radius: 50px 50px 0px 0px;
+    background: linear-gradient(145deg, #557a6f, #659084);
+    box-shadow:  32px 32px 64px #507369, 
+                 -32px -32px 64px #6c9b8d;
+}
+
+.header{
+    padding: 30px;
+
+    max-width: inherit;
+    width: 100%;
+}
+
+.title{
+    font-size: 3.75rem;
+}
+
+.title, .addBar input[type=submit], ::placeholder{
+    color: #425e56;
+    text-shadow: 1px 1px 1px #6c9b8d;
+    opacity: 1; /* Firefox */
+}
+
+.searchBar, .addBar, .title{
+    text-align: center;
+}
+.searchBar input[type=text]{
+    width: 50%;
+}
+.searchBar input[type=text], .addBar input[type=text]{
+    border: 0;
+    appearance: none;
+    outline: 0;
+    margin-right: 25px;
+    padding: 10px 20px;
+    border-radius: 08px;
+    background: #5e877b;
+    box-shadow: inset 2px 2px 5px #4b6c62, 
+               inset -5px -5px 10px #71a294;
+}
+
+.searchBar input[type=text]:focus, .addBar input[type=text]:focus{
+    transition: all 0.2s ease-in-out;
+    box-shadow: inset 1px 1px 2px #4b6c62, 
+                inset -1px -1px 2px #71a294;
+}
+
+/* .addBar input[type=submit]:focus{            ***quitarle el borde del boton***
+    border: none;
+} */
+
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+  .task input:checked{
+    background-color: #4b6c62;
+  }
+
+.searchBar input[type=submit], .addBar input[type=submit]{
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 9px;
+    background: linear-gradient(145deg, #659084, #557a6f);
+    box-shadow:  5px 5px 10px #52756b, 
+                 -5px -5px 10px #6a998b;
+}
+
+.searchBar input[type=submit]:hover, .addBar input[type=submit]:hover{
+    box-shadow: -2px -2px 5px #6a998b, 2px 2px 5px #52756b;
+}
+
+
+.task{
+    margin: 50px 100px;
+    padding: 50px;
+    border-radius: 9px;
+    background: linear-gradient(145deg, #557a6f, #659084);
+    box-shadow:  20px 20px 40px #567c71, 
+             -20px -20px 40px #669285;
+}
+
+.task ul li{
+    list-style: none;
+    margin: 5px;
+    color: #425e56;
+    text-shadow: 1px 1px 1px #6c9b8d;
+    padding: 10px 05px;
+    font-size: 1.5em;
+}
+
+.task ul li img{
+    display: inline-block;
+    float: right;
+    color: blue;
+    cursor: pointer;
+    /* float: left; */
+}
+
+.task ul li:hover{
+    border-radius: 9px;
+    background: #5e877b;
+    box-shadow: inset 6px 6px 12px #567c71, 
+                inset -6px -6px 12px #669285;
+}
+
+.addBar{
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .searchBar{display: none;}
+    .task{display: none;}
+    .addBar{display: none;}
+    .neum{padding-bottom: 350px;
+          border-radius: 50px;}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/*  Andamos ruleta, en una camioneta, recogimos la vaina que llego la avionetaaaaa 🎵🎵  */
