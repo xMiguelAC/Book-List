@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- ESTE ES EL TITULO / HEADER / BANNER -->
+        <div class="header">
+            <h1 class="title">Book List</h1>
+            <h4 class="subtitle">click on the book to edit.</h4>
+        </div>
+    
+                <!-- ESTE ES EL BUSCADOR DE LIBROS -->
+                <div class="searchBar">
+                    <form id="searchbar">
+                        <input type="text" placeholder="Search Task Here...">
+                    </form>
+                </div>
+    
+                
+                <!-- EN ESTA PARTE ES DONDE SE RELLENA CON LOS DATOS DEL API -->
+                <div class="task" id="task">
+                    <ul>
+                        <!--  	ESTE ES UN LI DE EJEMPLO 2196
+                            <li>
+                                <input type="checkbox" class="checkbox">
+                                <span class="text">Stay at home</span>
+                                <img alt="Basurita" class='imgTrash' src=""/>
+                            </li> 
+                        -->
+                    </ul>
+                </div>
+    
+            <!-- ESTE ES EL FORMULARIO PARA AGREGAR Y MODIFICAR LIBROS -->
+            <div class="addBar">
+                <input type="text" class="dni" id="idInput">
+                <input type="text" class="addinput" placeholder="Add Task Here..." id="addinput">
+                <input type="submit" value="Add" class="addbutton" id="addbutton">
+                <input type="submit" value="Cancel" class="dni addbutton" id="modifybutton">
+            </div>
+    </div>
+
+<script src="./app.js"></script>
+</body>
+</html>
